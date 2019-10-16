@@ -1,0 +1,11 @@
+Read "scripts\stealth.sqf".
+- Fix - 
+
+Release
+cas.
+car drive path.
+
+Update
+dynamic enemy presence.
+ghillie suit functionality.
+implement alias thunderbolt script with stealth unsuppressed shots.

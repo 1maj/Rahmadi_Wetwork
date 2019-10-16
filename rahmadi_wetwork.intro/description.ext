@@ -1,0 +1,327 @@
+//	Base
+class Header
+{
+	gameType	=	COOP; 
+	minPlayers	=	1; 
+	maxPlayers	=	4; 
+};
+
+
+//	Mission Info
+author			= "Green";
+OnLoadName		= "Rahmadi Wetwork";
+OnLoadMission	= "A CTRG diver team is sent to Rahmadi.";
+overviewText	= "Prior to the invasion of Sahrani a CTRG diver team is sent to the island of Rahmadi just off the coast tasked with destroying an airbase and radar installation. CO-1-4 (JTAC required, sapper recommended)";
+briefingName	= "Rahmadi Wetwork"; 
+saving = 0;
+
+//	Images
+loadScreen		= "images\loadScreen.paa";
+overviewPicture	= "images\loadScreen.paa";
+
+
+//	Cleaner
+corpseManagerMode = 0;
+corpseLimit = 10;
+minPlayerDistance = 50;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 500;
+
+
+//	Respawn
+respawnOnStart = -1;
+respawn = "BIRD";
+respawnButton = 0;
+respawnDialog = 0; 
+
+
+//	Misc
+disabledAI = 1;
+enableDebugConsole = 2;
+disableChannels[] = {0, 1, 2, 3};
+
+
+//	EasterEgg
+onCheat = "hint 'Is this genetically modified Salmon?'";
+
+
+//	Includes/FNC
+
+
+class CfgFunctions 
+{
+};
+
+
+//	Define Sounds Player Can Adjust With "Music" volume setting
+class CfgMusic
+{
+	tracks[]={};
+
+	class intro_music
+	{
+		name = "intro_music";
+		sound[] = {"\Sounds\intro_music.ogg", db+3, 1.0};
+	};
+};
+
+
+// Define Sounds Locked To "Effects" volume setting
+class CfgSounds
+{
+	sounds[] = {};
+	class electric_broken
+	{
+		name = "electric_broken";
+		sound[] = {"\sounds\electricBroken.ogg", db+5, 1};
+		titles[] = {0, ""};
+	};
+	class 01_close
+	{
+		name = "01_close"; // Name for mission editor
+		sound[] = {\Sound\01_close.ogg, db+30, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 02_close
+	{
+		name = "02_close"; // Name for mission editor
+		sound[] = {\Sound\02_close.ogg, db+30, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class 03_close
+	{
+		name = "03_close"; // Name for mission editor
+		sound[] = {\Sound\03_close.ogg, db+30, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class 04_close
+	{
+		name = "04_close"; // Name for mission editor
+		sound[] = {\Sound\04_close.ogg, db+30, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class 05_close
+	{
+		name = "05_close"; // Name for mission editor
+		sound[] = {\Sound\05_close.ogg, db+30, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class 07_close
+	{
+		name = "07_close"; // Name for mission editor
+		sound[] = {\Sound\07_close.ogg, db+30, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class 08_close
+	{
+		name = "08_close"; // Name for mission editor
+		sound[] = {\Sound\08_close.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};		
+	class 01_far
+	{
+		name = "01_far"; // Name for mission editor
+		sound[] = {\Sound\01_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 02_far
+	{
+		name = "02_far"; // Name for mission editor
+		sound[] = {\Sound\02_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 03_far
+	{
+		name = "03_far"; // Name for mission editor
+		sound[] = {\Sound\03_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 04_far
+	{
+		name = "04_far"; // Name for mission editor
+		sound[] = {\Sound\04_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 05_far
+	{
+		name = "05_far"; // Name for mission editor
+		sound[] = {\Sound\05_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 06_far
+	{
+		name = "06_far"; // Name for mission editor
+		sound[] = {\Sound\06_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 07_far
+	{
+		name = "07_far"; // Name for mission editor
+		sound[] = {\Sound\07_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 08_far
+	{
+		name = "08_far"; // Name for mission editor
+		sound[] = {\Sound\08_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 09_far
+	{
+		name = "09_far"; // Name for mission editor
+		sound[] = {\Sound\09_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 10_far
+	{
+		name = "10_far"; // Name for mission editor
+		sound[] = {\Sound\10_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 11_far
+	{
+		name = "11_far"; // Name for mission editor
+		sound[] = {\Sound\11_far.ogg,1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 12_far
+	{
+		name = "12_far"; // Name for mission editor
+		sound[] = {\Sound\12_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 13_far
+	{
+		name = "13_far"; // Name for mission editor
+		sound[] = {\Sound\13_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 14_far
+	{
+		name = "14_far"; // Name for mission editor
+		sound[] = {\Sound\14_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 16_far
+	{
+		name = "16_far"; // Name for mission editor
+		sound[] = {\Sound\16_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 17_far
+	{
+		name = "17_far"; // Name for mission editor
+		sound[] = {\Sound\17_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 18_far
+	{
+		name = "18_far"; // Name for mission editor
+		sound[] = {\Sound\18_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 19_far
+	{
+		name = "19_far"; // Name for mission editor
+		sound[] = {\Sound\19_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 20_far
+	{
+		name = "20_far"; // Name for mission editor
+		sound[] = {\Sound\20_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 21_far
+	{
+		name = "21_far"; // Name for mission editor
+		sound[] = {\Sound\21_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 22_far
+	{
+		name = "22_far"; // Name for mission editor
+		sound[] = {\Sound\22_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 23_far
+	{
+		name = "23_far"; // Name for mission editor
+		sound[] = {\Sound\23_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 24_far
+	{
+		name = "24_far"; // Name for mission editor
+		sound[] = {\Sound\24_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 25_far
+	{
+		name = "25_far"; // Name for mission editor
+		sound[] = {\Sound\25_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 26_far
+	{
+		name = "26_far"; // Name for mission editor
+		sound[] = {\Sound\26_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};	
+	class 27_far
+	{
+		name = "27_far"; // Name for mission editor
+		sound[] = {\Sound\27_far.ogg, 1, 1.0};
+		titles[] = {0, ""};	
+	};
+	class tiuit
+	{
+		name = "tiuit"; // Name for mission editor
+		sound[] = {\Sound\tiuit.ogg, 0.2, 1.0};
+		titles[] = {0, ""};	
+	};	
+};
+
+//	Different Endings
+class CfgDebriefing
+{  
+	//	Sapper or JTAC not present
+	class End1
+	{
+		title = "404 JTAC not found";
+		subtitle = "";
+		description = "You must have a player slotted in as JTAC to play this mission!";
+		pictureBackground = "images\404jtac.paa";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	//	Mission completed
+	class End2
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "The enemy assets have been destroyed.";
+		pictureBackground = "images\loadScreen.paa";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	//	Mission success
+	class End3
+	{
+		title = "Mission Success";
+		subtitle = "";
+		description = "The airbase, radar and HVT is history!";
+		pictureBackground = "images\loadScreen.paa";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End4
+	{
+		title = "Casualty";
+		subtitle = "";
+		description = "A member of your team was killed. Mission aborted!";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
